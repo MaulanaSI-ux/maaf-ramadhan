@@ -2,13 +2,14 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #ffd6e0, #fff5e4);
+
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  text-align: center;
-  overflow: hidden;
+
+  min-height: 100dvh; /* penting buat HP */
   padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Floating Love Background */
@@ -35,8 +36,6 @@ body::before {
   box-shadow: 0 15px 35px rgba(0,0,0,0.15);
   width: 100%;
   max-width: 420px;
-  position: relative;
-  z-index: 2;
   animation: popUp 0.6s ease;
 }
 
