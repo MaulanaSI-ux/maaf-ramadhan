@@ -1,6 +1,6 @@
-body {
+bbody {
   margin: 0;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #ffd6e0, #fff5e4);
   display: flex;
   justify-content: center;
