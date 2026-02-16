@@ -46,13 +46,20 @@ function putar(){
   musik.play();
 }
 
-/* Tombol kabur */
-const kabur = document.getElementById("kaburBtn");
+const btn = document.getElementById("gakDulu");
+const container = document.querySelector(".container");
 
-if(kabur){
-  kabur.addEventListener("mouseover", function(){
-    kabur.style.position = "absolute";
-    kabur.style.top = Math.random() * 80 + "%";
-    kabur.style.left = Math.random() * 60 + "%";
-  });
-}
+btn.addEventListener("click", function() {
+  const containerRect = container.getBoundingClientRect();
+  const btnRect = btn.getBoundingClientRect();
+
+  const maxX = containerRect.width - btnRect.width - 20;
+  const maxY = containerRect.height - btnRect.height - 20;
+
+  const randomX = Math.random() * maxX;
+  const randomY = Math.random() * maxY;
+
+  btn.style.position = "absolute";
+  btn.style.left = randomX + "px";
+  btn.style.top = randomY + "px";
+});

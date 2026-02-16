@@ -90,6 +90,7 @@ button:hover {
 .secondary {
   background: #ccc;
   color: black;
+  position: relative;
 }
 
 .back-btn {
